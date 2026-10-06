@@ -1,0 +1,19 @@
+{
+  "domain": "arb_zero",
+  "name": "ARB Zero Fridge",
+  "bluetooth": [
+    {
+      "local_name": "ARBZERO*",
+      "connectable": true
+    }
+  ],
+  "codeowners": ["@Chewbaccalakis"],
+  "config_flow": true,
+  "dependencies": ["bluetooth_adapters"],
+  "documentation": "https://github.com/Chewbaccalakis/arb-zero-ha",
+  "integration_type": "device",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/Chewbaccalakis/arb-zero-ha/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}

@@ -1,0 +1,49 @@
+{
+  "config": {
+    "flow_title": "{name}",
+    "step": {
+      "user": {
+        "description": "Choose the fridge to set up.",
+        "data": {
+          "address": "Fridge"
+        }
+      },
+      "bluetooth_confirm": {
+        "description": "Set up {name}? Close the ARB app first, because the fridge accepts only one connection at a time."
+      }
+    },
+    "abort": {
+      "already_configured": "This fridge is already set up.",
+      "no_devices_found": "No ARB Zero fridges were found. Make sure the fridge's Bluetooth is ON and OPEN, the ARB app is closed, and an active Bluetooth adapter or proxy is in range."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "temperature": { "name": "Temperature" },
+      "raw_byte_11": { "name": "Raw byte 11" }
+    },
+    "number": {
+      "setpoint": { "name": "Setpoint" }
+    },
+    "switch": {
+      "boost": { "name": "Boost" }
+    },
+    "select": {
+      "battery_protection": {
+        "name": "Battery protection",
+        "state": {
+          "low": "Low",
+          "medium": "Medium",
+          "high": "High"
+        }
+      },
+      "display_unit": {
+        "name": "Display unit",
+        "state": {
+          "celsius": "°C",
+          "fahrenheit": "°F"
+        }
+      }
+    }
+  }
+}
